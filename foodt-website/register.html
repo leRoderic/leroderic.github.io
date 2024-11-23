@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="images/logos/favicon.ico"/>
+        <link rel="shortcut icon" href="images/logos/favicon.ico" />
+        <title>FOODT - Registro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/register.css">
+        <link rel="stylesheet" href="css/buttons.css">
+        <link rel="stylesheet" href="css/toastr.css">
+        <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/toastr.js"></script>
+  </head>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <body class="text-center">
+    <form class="form-signin" action="" method="post" id="loginform" oninput='up2.setCustomValidity(up2.value != up.value ? "Las contraseñas no coinciden" : "")'>
+        <img class="mb-4 center" src="images/logos/transparent.png" alt="logo" width="300" height="100">
+        <h1 class="h3 mb-3 font-weight-normal white">Registro</h1>
+        <label for="inputEmail" class="sr-only">Correo electrónico</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Correo electrónico" required autofocus>
+        <label for="inputPassword" class="sr-only">Contraseña</label>
+        <input type="password" name="up" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+        <label for="inputPassword2" class="sr-only">Repetir contraseña</label>
+        <input id="inputPassword2" name="up2" class="form-control confirm-psw" type="password" placeholder="Repetir contraseña" required>
+        <div class="checkbox mb-3 white">
+            <label>
+                <input type="checkbox" value="remember-me"> Mantener sesión iniciada
+            </label>
+            <div class="g-recaptcha" data-sitekey="6LfhaOgUAAAAAAWbBsjUAvYnMsIAC2tItX8ogGrT"></div>
+        </div>
+
+        <button id="submit" class="btn" type="submit">Crear cuenta</button>
+    </form>
+    <script>
+        toastr.warning("El captcha puede no verse correctamente dependiendo de tu dominio local, para verlo correctamente" +
+            " haz clic aquí.", "AVISO", {timeOut: 0, extendedTimeOut: 0, onclick: function(){
+                window.location.href="https://leroderic.github.io/foodt-website/register"}});
+    </script>
+    <script>
+        document.getElementById("loginform").addEventListener("submit", function(e){
+            var recaptcha = $("#g-recaptcha-response").val();
+            if (recaptcha === "") {
+                e.preventDefault();
+                toastr.info("¿Eres un robot? Si no es así, completa la verificación para continuar.");
+                //alert("¿Eres un robot? Si no es así, completa la verificación para continuar.");
+            }else {
+                e.preventDefault();
+                window.location.href = "index.html";
+            }
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

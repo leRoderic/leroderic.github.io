@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/logos/favicon.ico"/>
+    <link rel="shortcut icon" href="images/logos/favicon.ico"/>
+    <title>FOODT - Restaurantes</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Rock+Salt|Source+Code+Pro:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/toastr.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/product.css">
+    <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/toastr.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark primary-color animated slideInDown" style="background-color: #2dce4d !important">
+    <a class="navbar-brand" href="index.html" style="font-family: Artgallery"><b>FOODT</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active" style="background-color: #0c611b">
+                <a class="nav-link" href="restaurants.html">Restaurantes
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ofertas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cocínalo tú</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+                <a class="nav-link" href="cartEmpty.html">Mi cesta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Área privada</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container animated slideInUp" style="margin-top: 30px">
+    <h1 style="margin-bottom: 20px">Restaurantes cerca de ti</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="images/restaurants/albergo.jfif"
+                     data-holder-rendered="true">
+                <div class="card-body align">
+                    <a href="" style="color: black"><h3 style="text-align: center">Albergo</h3></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" style="pointer-events: none">
+                                Italiano
+                            </button>
+                        </div>
+                        <small class="text-muted" style="float: right">A 2 km</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="images/restaurants/bangkok.jfif"
+                     data-holder-rendered="true">
+                <div class="card-body align">
+                    <a href="" style="color: black"><h3 style="text-align: center">Bangkok</h3></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" style="pointer-events: none">
+                                Tailandés
+                            </button>
+                        </div>
+                        <small class="text-muted" style="float: right">A 2.1 km</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="images/restaurants/la-chelinda.jpg"
+                     data-holder-rendered="true">
+                <div class="card-body align">
+                    <a href="" style="color: black"><h3 style="text-align: center">La Chelinda</h3></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" style="pointer-events: none">
+                                Mexicano
+                            </button>
+                        </div>
+                        <small class="text-muted" style="float: right">A 2.1 km</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="images/restaurants/la-tagliatella.jpg"
+                     data-holder-rendered="true">
+                <div class="card-body align">
+                    <a href="restaurant.html" style="color: black"><h3 style="text-align: center">La
+                        Tagliatella</h3>
+                    </a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" style="pointer-events: none">
+                                Italiano
+                            </button>
+                        </div>
+                        <small class="text-muted" style="float: right">A 2.5 km</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="images/restaurants/oriental-dragon.jpg"
+                     data-holder-rendered="true">
+                <div class="card-body align">
+                    <a href="" style="color: black"><h3 style="text-align: center">Oriental Dragon</h3></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" style="pointer-events: none">
+                                Chino
+                            </button>
+                        </div>
+                        <small class="text-muted" style="float: right">A 2.5 km</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="images/restaurants/yummy_dogs.jfif"
+                     data-holder-rendered="true">
+                <div class="card-body align">
+                    <a href="" style="color: black"><h3 style="text-align: center">Yummy Dogs</h3></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" style="pointer-events: none">
+                                Americano
+                            </button>
+                        </div>
+                        <small class="text-muted" style="float: right">A 2.6 km</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="images/restaurants/the_grocer.jfif"
+                     data-holder-rendered="true">
+                <div class="card-body align">
+                    <a href="" style="color: black"><h3 style="text-align: center">The Grocer</h3></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" style="pointer-events: none">
+                                Gourmet
+                            </button>
+                        </div>
+                        <small class="text-muted" style="float: right">A 2.65 km</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="images/restaurants/rossopomodoro_1.jpg"
+                     data-holder-rendered="true">
+                <div class="card-body align">
+                    <a href="" style="color: black"><h3 style="text-align: center">Rossopomodoro</h3></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" style="pointer-events: none">
+                                Italiano
+                            </button>
+                        </div>
+                        <small class="text-muted" style="float: right">A 2.75 km</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="images/restaurants/wagamama.jpg"
+                     data-holder-rendered="true">
+                <div class="card-body align">
+                    <a href="" style="color: black"><h3 style="text-align: center">wagamama</h3></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" style="pointer-events: none">
+                                Fusión
+                            </button>
+                        </div>
+                        <small class="text-muted" style="float: right">A 2.8 km</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="images/restaurants/romeos.jfif"
+                     data-holder-rendered="true">
+                <div class="card-body align">
+                    <a href="" style="color: black"><h3 style="text-align: center">Romeo's</h3></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" style="pointer-events: none">
+                                Vegano
+                            </button>
+                        </div>
+                        <small class="text-muted" style="float: right">A 3.1 km</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="images/restaurants/maitake.jpg"
+                     data-holder-rendered="true">
+                <div class="card-body align">
+                    <a href="" style="color: black"><h3 style="text-align: center">Maitake</h3></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" style="pointer-events: none">
+                                Japonés
+                            </button>
+                        </div>
+                        <small class="text-muted" style="float: right">A 3.4 km</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="images/restaurants/vapiano.jpg"
+                     data-holder-rendered="true">
+                <div class="card-body align">
+                    <a href="" style="color: black"><h3 style="text-align: center">Vapiano</h3></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" style="pointer-events: none">
+                                Italiano
+                            </button>
+                        </div>
+                        <small class="text-muted" style="float: right">A 4.1 km</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="images/restaurants/la-tour-de-jade.jpg"
+                     data-holder-rendered="true">
+                <div class="card-body align">
+                    <a href="" style="color: black"><h3 style="text-align: center">La Tour de Jade</h3></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" style="pointer-events: none">
+                                Tailandés
+                            </button>
+                        </div>
+                        <small class="text-muted" style="float: right">A 4.5 km</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="images/restaurants/lazy.jfif"
+                     data-holder-rendered="true">
+                <div class="card-body align">
+                    <a href="" style="color: black"><h3 style="text-align: center">Lazy</h3></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" style="pointer-events: none">
+                                Vegano
+                            </button>
+                        </div>
+                        <small class="text-muted" style="float: right">A 4.55 km</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                     alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                     src="images/restaurants/nemrod.jpg"
+                     data-holder-rendered="true">
+                <div class="card-body align">
+                    <a href="" style="color: black"><h3 style="text-align: center">Le Nemrod</h3></a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" style="pointer-events: none">
+                                Europeo
+                            </button>
+                        </div>
+                        <small class="text-muted" style="float: right">A 4.6 km</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<style>
+    df-messenger {
+        --df-messenger-bot-message: #479b3d;
+        --df-messenger-button-titlebar-color: #0cce7d;
+        --df-messenger-chat-background-color: #fafafa;
+        --df-messenger-font-color: white;
+        --df-messenger-send-icon: #58c64d;
+        --df-messenger-user-message: #1abf12;
+    }
+</style>
+<df-messenger
+        intent="WELCOME"
+        chat-title="Pimentín - Asistente virtual de FOODT"
+        agent-id="f9c913e2-402f-4101-952b-c3565cf00f46"
+        language-code="es"
+        chat-icon="images/chatbot/pimentin.png"
+></df-messenger>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<div class="center" style="text-align: center">
+    <p>&copy; <span style="font-family: Artgallery">FOODT</span> 2020. All Rights Reserved.</p>
+</div>
+</body>
+</html>

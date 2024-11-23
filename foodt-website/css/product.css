@@ -1,0 +1,122 @@
+html,
+body {
+    font-family: 'Roboto';
+    margin: 0;
+}
+
+.fondo {
+    background: linear-gradient(-45deg, #2DCE4D, #103900, #37aefd, #3E8914);
+    background-size: 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.jumbotron {
+  background-size: cover;
+    height: 100%;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.barNav a {
+    margin-top: 100px;
+    margin-left: 100px;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 26px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.barNav a:hover {
+    background-color: #e2e3e5;
+    color: black;
+}
+
+.barNav a.active {
+    background-color: #2dce4d;
+    color: white;
+}
+
+.barNav-right {
+    float: right;
+}
+
+.general_margin {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.price {
+    float: right;
+    color: black;
+    text-align: center;
+}
+
+.side {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.details {
+    margin-top: 75px;
+}
+
+.details_1 {
+    background-color: #e2e3e5;
+}
+
+.textdescription {
+    margin-top: 15px;
+    height: 200px;
+    overflow: auto;
+}
+
+.selector {
+    float: right;
+    display: inline-block;
+}
+
+.button_comprar a {
+    margin-top: 15px;
+    float: right;
+    background-color: #e2e3e5;
+    padding: 10px 16px;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button_comprar a:hover {
+    color: #0F0F0F;
+}
+
+.completaMenu {
+    margin-top: 120px;
+}
+
+.column {
+    float: left;
+    width: 15%;
+    padding: 10px;
+}
+
+.column img {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 0.9;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

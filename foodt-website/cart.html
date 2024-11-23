@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/logos/favicon.ico"/>
+    <link rel="shortcut icon" href="images/logos/favicon.ico"/>
+    <title>FOODT - Mi cesta</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Rock+Salt|Source+Code+Pro:300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Rock+Salt|Source+Code+Pro:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/toastr.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/toastr.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark primary-color animated slideInDown"
+     style="background-color: #2dce4d !important">
+    <a class="navbar-brand" href="index.html" style="font-family: Artgallery"><b>FOODT</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="restaurants.html">Restaurantes
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Ofertas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cocínalo tú</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item active" style="background-color: #0c611b">
+                <a class="nav-link" href="#">Mi cesta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Área privada</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="animated slideInUp">
+    <div class="container">
+        <h1 style="margin-bottom: 20px; margin-top: 20px; margin-left: 10px">Mi cesta</h1>
+
+        <div class="container mb-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Tiempo de envío</th>
+                                <th scope="col" class="text-center">Cantidad</th>
+                                <th scope="col" class="text-right">Precio</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a href="product.html"><img src="images/food/plates/insafruti.PNG"
+                                                                height="50px"/></a></td>
+                                <td><a href="product.html">Insalata al frutti di mare</a></td>
+                                <td>25 minutos aprox.</td>
+                                <td>2 unidades</td>
+                                <td class="text-right">11.50€</td>
+                                <td class="text-right">
+                                    <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Envío</td>
+                                <td class="text-right">4.50€</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><strong>Total</strong></td>
+                                <td class="text-right"><strong>27.5€</strong></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 text-right">
+                            <button class="btn btn-lg btn-block btn-secondary text-uppercase"
+                                    onclick="location.href = 'restaurants.html'">Seguir comprando
+                            </button>
+                        </div>
+                        <div class="col-sm-12 col-md-6 text-right">
+                            <button class="btn btn-lg btn-block btn-success text-uppercase animated infinite pulse delay-2s"
+                                    onclick="location.href = 'payment.html'">Pagar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center" style="text-align: center">
+        <p>&copy; <span style="font-family: Artgallery">FOODT</span> 2020. All Rights Reserved.</p>
+    </div>
+</div>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<style>
+    df-messenger {
+        --df-messenger-bot-message: #479b3d;
+        --df-messenger-button-titlebar-color: #0cce7d;
+        --df-messenger-chat-background-color: #fafafa;
+        --df-messenger-font-color: white;
+        --df-messenger-send-icon: #58c64d;
+        --df-messenger-user-message: #1abf12;
+    }
+</style>
+<df-messenger
+        intent="WELCOME"
+        chat-title="Pimentín - Asistente virtual de FOODT"
+        agent-id="f9c913e2-402f-4101-952b-c3565cf00f46"
+        language-code="es"
+        chat-icon="images/chatbot/pimentin.png"
+></df-messenger>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>

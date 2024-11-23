@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>squid-remote is on maintenance mode</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-light.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body style="background-color: #1f2223">
+<div class="overlay"></div>
+<div id="wrap" style="margin-top: 10%" onload="onstart()">
+    <div class="container">
+	<h1><img src="./logo_small.png" style="max-height: 75%"></h1>
+        <h1>
+		<hr style="height:2px;border-width:0;width: 10em;color:gray;background-color:#57778A">
+            <span style="color: white; font-family: logo; display: none" id="en">the app is undergoing some maintenance,<br/>please check back again later</span>
+			<span style="color: white; font-family: logo; display: none" id="es">aplicación en mantenimiento,<br/>por favor vuelve más tarde</span>
+			<span style="color: white; font-family: logo; display: none" id="ca">aplicació en mantenimient,<br/>si us plau torna més tard</span>
+        </h1>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+		var lng = navigator.language;
+        switch (lng.slice(0, 2)){
+			case "en":
+			document.getElementById("en").style.display = "block";
+			break;
+			case "es":
+			document.getElementById("es").style.display = "block";
+			break;
+			case "ca":
+			document.getElementById("ca").style.display = "block";
+			break;
+		}
+    });
+</script>
+
+</body>
+</html>

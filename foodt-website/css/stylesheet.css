@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('roboto-regular-webfont.woff2') format('woff2'),
+    url('roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "Artgallery";
+    src: url("b7ed5aa0e1b835ea5fea44134a2a3cb7.eot"); /* IE9*/
+    src: url("b7ed5aa0e1b835ea5fea44134a2a3cb7.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("b7ed5aa0e1b835ea5fea44134a2a3cb7.woff2") format("woff2"), /* chrome、firefox */ url("b7ed5aa0e1b835ea5fea44134a2a3cb7.woff") format("woff"), /* chrome、firefox */ url("b7ed5aa0e1b835ea5fea44134a2a3cb7.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url("b7ed5aa0e1b835ea5fea44134a2a3cb7.svg#Artgallery") format("svg"); /* iOS 4.1- */
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background-image: linear-gradient(#2dce4d, #C9B230);
+    color: white;
+    text-align: center;
+}
+
+.text_logo {
+    font-family: 'Artgallery';
+    font-size: 30px;
+    color: #FFFFFF
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.header {
+    position: absolute;
+    top: 0;
+}
+
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+    top: 120px;
+    width: 100%;
+    height: 80px;
+    background-color: #FFFFFF;
+    position: absolute;
+    overflow: hidden;
+    background-color: #e9e9e9;
+}
+
+.topnav .search-bar {
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 27px;
+
+    margin-right: 80px;
+    top: 0px;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+
+    font-size: 17px;
+}
+
+.topnav .search-bar button {
+    background: #ddd;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav h1 {
+    font-size: x-large;
+    margin-left: 350px;
+    margin-top: 25px;
+
+}
+
+.ofertas {
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: #d8e9f3;
+}
+
+/* styling images of gallery */
+.gallery {
+    margin: 25px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.rest-gallery {
+    margin-left: 70px;
+    margin: 50px;
+    float: left;
+    width: 400px;
+    height: 250px;
+
+}
+
+div.gallery:hover {
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.rest-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.rest-gallery img:hover {
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+div.description {
+    padding: 30px;
+    text-align: center;
+}
+
+div.description:hover {
+    cursor: pointer;
+    font-style: italic;
+}
+
+
+/* novedades */
+
+
+.whats-new {
+    margin-top: 600px;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: #b2d3e6;
+
+}
+
+.fav-restaurants {
+
+    margin-top: 1500px;
+    position: absolute;
+    width: 100%;
+    height: 1200px;
+    background-color: #008081;
+
+}
+
+@media (min-width: 768px) {
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
